@@ -13,10 +13,13 @@
   ],
   "scripts": {
     "build": "tsc",
-    "start": "probot run ./lib/index.js",
+    "start": "tsc & probot run ./lib/index.js",
     "test": "jest"
   },
   "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "axios": "^0.27.2",
+    "js-yaml": "^4.1.0",
     "probot": "^11.0.1"
   },
   "devDependencies": {
